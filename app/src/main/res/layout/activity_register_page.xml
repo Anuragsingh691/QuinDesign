@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/signup_appLogo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_marginTop="60dp"
+        />
+    <EditText
+        android:id="@+id/signup_Name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_appLogo"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:hint="UserName"
+        android:inputType="text"
+        android:textColor="#000"
+        android:textColorHint="#373535"
+        android:textSize="20dp"
+        android:fontFamily="@font/maitree" />
+    <EditText
+        android:id="@+id/signup_phoneNo_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_Name_input"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:hint="phone number"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textColorHint="#373535"
+        android:textSize="20dp"
+        android:fontFamily="@font/maitree"
+        />
+    <EditText
+        android:id="@+id/signup_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_phoneNo_input"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#373535"
+        android:textSize="20dp"
+        android:fontFamily="@font/maitree"
+        />
+    <TextView
+        android:id="@+id/text_view_signup"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textAlignment="center"
+        android:layout_below="@id/signup_password_input"
+        android:text=" Have an account."
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/maitree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_sign_in_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/gradient"
+        android:text=" Login Here"
+        android:layout_toRightOf="@id/text_view_signup"
+        android:textAllCaps="false"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/signup_password_input"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_password_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="@font/maitree"
+        android:text=" Create Account "
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

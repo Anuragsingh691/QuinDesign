@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo"/>
+    <Button
+        android:id="@+id/join_nw_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:text="Join Now"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/maitree"
+        />
+    <Button
+        android:id="@+id/login_nw_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/join_nw_btn"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/gradient"
+        android:text=" Login "
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/maitree"
+        />
+
+</RelativeLayout>

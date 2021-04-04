@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/search_layoutAct"
+        android:layout_marginTop="5dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangle_2"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:hint="Search restaurants nearby"
+                android:id="@+id/search_edt_txt"
+                android:background="#fff"
+                android:fontFamily="@font/maitree"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:singleLine="true" />
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/search_img"
+                android:padding="5dp"
+                android:src="@drawable/ic_search_grey"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_img_bg"
+                android:scaleType="center" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/search_layoutAct"
+        android:id="@+id/layout2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check These Out "
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/inter"
+            android:textSize="20dp"
+            android:id="@+id/title"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout2"
+            android:layout_marginRight="10dp"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="vertical"
+            android:id="@+id/search_rv"/>
+</RelativeLayout>
